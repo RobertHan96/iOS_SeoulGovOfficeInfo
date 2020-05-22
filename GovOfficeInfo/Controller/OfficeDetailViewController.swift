@@ -19,17 +19,17 @@ class OfficeDetailViewController: UIViewController {
     }
     
     let labelOfficeName = UILabel().then {
-        $0.text = "구청"
+        $0.text = ""
         $0.font = UIFont.boldSystemFont(ofSize: 40)
     }
     let labelOfficeNumber = UILabel().then {
-        $0.text = "TEL."
+        $0.text = ""
         $0.font = UIFont.boldSystemFont(ofSize: 24)
         $0.textColor = .darkGray
     }
     let labelOfficeAddress = UILabel().then {
-        $0.text = "서울시 00구"
-        $0.font = UIFont.boldSystemFont(ofSize: 24)
+        $0.text = ""
+        $0.font = UIFont.boldSystemFont(ofSize: 16)
         $0.textColor = .darkGray
     }
     let mapViewContainer = UIView().then {
@@ -61,7 +61,7 @@ class OfficeDetailViewController: UIViewController {
      }
 
     func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .secondarySystemBackground
         view.addSubview(labelOfficeName)
         mapViewContainer.addSubview(mapView)
         view.addSubview(labelOfficeNumber)
@@ -82,9 +82,9 @@ class OfficeDetailViewController: UIViewController {
             make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(20)
         }
         btnGotoPublicSite.snp.makeConstraints { (make) in
-            make.width.equalTo(40)
-            make.height.equalTo(40)
-            make.left.equalTo(labelOfficeName.snp.right).offset(30)
+            make.width.equalTo(24)
+            make.height.equalTo(24)
+            make.left.equalTo(labelOfficeName.snp.right).offset(10)
             make.centerY.equalTo(labelOfficeName)
         }
         labelOfficeNumber.snp.makeConstraints { (make) in
@@ -94,6 +94,7 @@ class OfficeDetailViewController: UIViewController {
         labelOfficeAddress.snp.makeConstraints { (make) in
             make.top.equalTo(labelOfficeNumber.snp.bottom).offset(10)
             make.left.equalTo(labelOfficeName.snp.left)
+            make.right.equalTo(view.snp.right).offset(-10)
         }
         mapViewContainer.snp.makeConstraints { (make) in
             make.top.equalTo(labelOfficeAddress.snp.bottom).offset(20)

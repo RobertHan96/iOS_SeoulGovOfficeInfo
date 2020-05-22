@@ -11,16 +11,16 @@ class MainViewController: UIViewController {
     }
     let ad = UIApplication.shared.delegate as? AppDelegate
     let mainTitile = UILabel().then {
-        $0.text = "주변 관공서 정보"
+        $0.text = "mainViewTitle".localized
         $0.font = UIFont.boldSystemFont(ofSize: 34)
-        $0.textColor = .systemBlue
+        $0.textColor = .black
     }
     let btnContainer = UIView()
     let btnGotoTaxOffice = UIButton().then {
-        $0.setTitle("주변 세무서 찾기", for: .normal)
+        $0.setTitle("taxOfficeListBtnTitle".localized, for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
-        $0.setTitleColor(.darkGray, for: .normal)
+        $0.setTitleColor(.secondaryLabel, for: .normal)
         $0.layer.cornerRadius = 50
         $0.backgroundColor = .white
         $0.layer.borderWidth = 1.0
@@ -29,10 +29,10 @@ class MainViewController: UIViewController {
         $0.contentEdgeInsets.right = 10
     }
     let btnGotoGuOffice = UIButton().then {
-        $0.setTitle("주변 구청 찾기", for: .normal)
+        $0.setTitle("guOfficeListBtnTitle".localized, for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
-        $0.setTitleColor(.darkGray, for: .normal)
+        $0.setTitleColor(.secondaryLabel, for: .normal)
         $0.layer.cornerRadius = 50
         $0.backgroundColor = .white
         $0.layer.borderWidth = 1.0
@@ -41,10 +41,10 @@ class MainViewController: UIViewController {
         $0.contentEdgeInsets.right = 10
     }
     let btnGotoTaxOfficeIntro = UIButton().then {
-        $0.setTitle("세무서 담당업무", for: .normal)
+        $0.setTitle("taxOfficeIntroBtnTitle".localized, for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
-        $0.setTitleColor(.darkGray, for: .normal)
+        $0.setTitleColor(.secondaryLabel, for: .normal)
         $0.layer.cornerRadius = 50
         $0.backgroundColor = .white
         $0.layer.borderWidth = 1.0
@@ -53,10 +53,10 @@ class MainViewController: UIViewController {
         $0.contentEdgeInsets.right = 10
     }
     let btnGotoGuOfficeIntro = UIButton().then {
-        $0.setTitle("구청 담당업무", for: .normal)
+        $0.setTitle("officeIntroViewTitle".localized, for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
-        $0.setTitleColor(.darkGray, for: .normal)
+        $0.setTitleColor(.secondaryLabel, for: .normal)
         $0.layer.cornerRadius = 50
         $0.backgroundColor = .white
         $0.layer.borderWidth = 1.0
@@ -87,7 +87,7 @@ class MainViewController: UIViewController {
     }
     
     func setupUI() {
-        view.backgroundColor = UIColor(red: 208, green: 201, blue: 201, alpha: 1)
+        view.backgroundColor = .secondarySystemBackground
         view.addSubview(mainTitile)
         view.addSubview(btnContainer)
         view.addSubview(btnGotoTaxOffice)

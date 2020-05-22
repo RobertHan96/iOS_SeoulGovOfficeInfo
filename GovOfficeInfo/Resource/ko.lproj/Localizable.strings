@@ -1,1 +1,8 @@
-"mainViewTitle" = "서울시 관공서 정보"
+"mainViewTitle" = "서울시 관공서 정보" ;
+"officeIntroViewTitle" = "구청 주요 업무" ;
+"officeListViewTitle" = "자치구별 위치" ;
+
+"taxOfficeListBtnTitle" = "세무서 찾기" ;
+"guOfficeListBtnTitle" = "구청 찾기" ;
+"taxOfficeIntroBtnTitle" = "세무서 주요 업무" ;
+"guOfficeIntroBtnTitle" = "구청 주요 업무" ;

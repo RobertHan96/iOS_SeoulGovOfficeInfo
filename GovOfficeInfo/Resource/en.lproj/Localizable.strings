@@ -1,1 +1,7 @@
-"mainViewTitle" = "Seoul city office list"
+"mainViewTitle" = "Seoul city office list" ;
+"officeIntroViewTitle" = "Office main task" ;
+"officeListViewTitle" = "Office locations" ;
+"taxOfficeListBtnTitle" = "tax office list" ;
+"guOfficeListBtnTitle" = "gu office list" ;
+"taxOfficeIntroBtnTitle" = "tax office task" ;
+"guOfficeIntroBtnTitle" = "gu office task" ;

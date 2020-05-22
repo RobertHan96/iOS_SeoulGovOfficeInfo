@@ -10,20 +10,20 @@ class OfficeListViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     let ad = UIApplication.shared.delegate as? AppDelegate
     let btnTitle = UIButton().then {
-        $0.setTitle("지역별 위치 안내", for: .normal)
-        $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        $0.setTitle("officeListViewTitle".localized, for: .normal)
+        $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
         $0.setTitleColor(.black, for: .normal)
-        $0.layer.cornerRadius = 10
-        $0.backgroundColor = UIColor(displayP3Red: 93, green: 81, blue: 81, alpha: 1)
-        $0.layer.borderWidth = 1.0
-        $0.layer.borderColor = UIColor.darkGray.cgColor
-        $0.contentEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+//        $0.layer.cornerRadius = 10
+//        $0.backgroundColor = UIColor(displayP3Red: 93, green: 81, blue: 81, alpha: 1)
+//        $0.layer.bounds.borderWidth = 1.0
+//        $0.layer.borderColor = UIColor.darkGray.cgColor
+//        $0.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     let officeListCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()).then {
         $0.register(UINib(nibName: "OfficeListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "officeListItem")
         let layout = UICollectionViewFlowLayout()
-        $0.backgroundColor = .white
+        $0.backgroundColor = .secondarySystemBackground
         layout.minimumInteritemSpacing = 3
         $0.collectionViewLayout = layout
     }
@@ -60,7 +60,7 @@ class OfficeListViewController: UIViewController, UICollectionViewDelegate, UICo
     }
 
     func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .secondarySystemBackground
         view.addSubview(btnTitle)
         view.addSubview(officeListCollectionView)
         officeListCollectionView.delegate = self
@@ -70,14 +70,14 @@ class OfficeListViewController: UIViewController, UICollectionViewDelegate, UICo
     func makeConstrains()  {
         btnTitle.snp.makeConstraints { (make) in
             make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(30)
-            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(30)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(10)
             make.right.lessThanOrEqualTo(self.view.safeAreaLayoutGuide.snp.right).offset(-30)
         }
         officeListCollectionView.snp.makeConstraints { (make) in
-            make.top.equalTo(btnTitle.snp.bottom).offset(30)
-            make.left.equalToSuperview().offset(30)
-            make.right.equalToSuperview().offset(-10)
-            make.bottom.equalToSuperview().offset(-50)
+            make.top.equalTo(btnTitle.snp.bottom).offset(20)
+            make.centerX.equalToSuperview().offset(0)
+            make.width.equalTo(view.snp.width).inset(10)
+            make.bottom.equalToSuperview().offset(-10)
         }
     }
 
