@@ -53,7 +53,7 @@ class MainViewController: UIViewController {
         $0.contentEdgeInsets.right = 10
     }
     let btnGotoGuOfficeIntro = UIButton().then {
-        $0.setTitle("officeIntroViewTitle".localized, for: .normal)
+        $0.setTitle("guOfficeIntroBtnTitle".localized, for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
         $0.setTitleColor(.secondaryLabel, for: .normal)

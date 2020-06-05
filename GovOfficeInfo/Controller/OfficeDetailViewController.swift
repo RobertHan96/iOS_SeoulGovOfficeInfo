@@ -22,10 +22,10 @@ class OfficeDetailViewController: UIViewController {
         $0.text = ""
         $0.font = UIFont.boldSystemFont(ofSize: 40)
     }
-    let labelOfficeNumber = UILabel().then {
-        $0.text = ""
-        $0.font = UIFont.boldSystemFont(ofSize: 24)
-        $0.textColor = .darkGray
+    let labelOfficeNumber = UIButton().then {
+        $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        $0.titleLabel?.adjustsFontSizeToFitWidth = true
+        $0.setTitleColor(.darkGray, for: .normal)
     }
     let labelOfficeAddress = UILabel().then {
         $0.text = ""
@@ -59,6 +59,15 @@ class OfficeDetailViewController: UIViewController {
         let safariViewController = SFSafariViewController(url: url)
         present(safariViewController, animated: true, completion: nil)
      }
+    
+    @objc func makePhoneCall(_ sender : UIButton) {
+        if let phoneCallURL = URL(string: "tel://\(sender.titleLabel!.text!.makeNumberToPhoneCall)") {
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+            }
+        }
+    }
 
     func setupUI() {
         view.backgroundColor = .secondarySystemBackground
@@ -69,9 +78,10 @@ class OfficeDetailViewController: UIViewController {
         view.addSubview(btnGotoPublicSite)
         view.addSubview(mapViewContainer)
         btnGotoPublicSite.addTarget(self, action: #selector(oepnSFSafariViewControllerAction), for: .touchUpInside)
+        labelOfficeNumber.addTarget(self, action: #selector(makePhoneCall(_:)), for: .touchUpInside)
         DatafetchManager.shared.fetchOfficeData {
             self.labelOfficeName.text = self.officeDivision[self.id].name
-            self.labelOfficeNumber.text = "TEL.\(self.officeDivision[self.id].tel)"
+            self.labelOfficeNumber.setTitle("TEL.\(self.officeDivision[self.id].tel)", for: .normal)
             self.labelOfficeAddress.text = self.officeDivision[self.id].address
         }
     }

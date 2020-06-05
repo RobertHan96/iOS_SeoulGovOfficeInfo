@@ -17,6 +17,11 @@ extension String {
 
         }
 
+    var makeNumberToPhoneCall : String {
+        var result = ""
+        for i in self { if i.isNumber {result += "\(i)"}}
+        return result
+    }
 }
 
 
