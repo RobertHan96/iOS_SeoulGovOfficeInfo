@@ -1,7 +1,85 @@
-"mainViewTitle" = "Seoul city office list" ;
-"officeIntroViewTitle" = "Office main task" ;
-"officeListViewTitle" = "Office locations" ;
-"taxOfficeListBtnTitle" = "tax office list" ;
-"guOfficeListBtnTitle" = "gu office list" ;
-"taxOfficeIntroBtnTitle" = "tax office task" ;
-"guOfficeIntroBtnTitle" = "gu office task" ;
+// Main View
+"mainViewTitle" = "Gov. offices in Seoul" ;
+"taxOfficeListBtnTitle" = "Find the Tax Offices" ;
+"guOfficeListBtnTitle" = "Find the Gu Office" ;
+"taxOfficeIntroBtnTitle" = "Tax office Responsibilities" ;
+"guOfficeIntroBtnTitle" = "Gu office Responsibilities" ;
+
+// Officce Tasks View
+"officeIntroViewTitle" = "Responsibilities" ;
+    // 구청
+    "passport" = "Passport";
+    "family" = "Family relationship";
+    "localTax" = "Local tax";
+    "car" = "Vehicle registration";
+    "welfare" = "Welfare counseling";
+    "healthCare" = "Health care";
+    "realEstate" = "Real estate";
+    "advert" = "Outdoor advertising";
+
+    // 세무서
+    "Protectingtaxpayer" = "Protecting the taxpayer";
+    "valueAddedTax" = "Value-added tax";
+    "corporateTax" = "Corporate tax";
+    "incomeTax" = "Income tax";
+
+
+// Office List View
+"officeListViewTitle" = "Location" ;
+    // 구청
+    "Jongro" = "Jongro";
+    "Jung-gu" = "Jung-gu";
+    "Seong-dong" = "Seong-dong";
+    "Yong-san" =  "Yong-san" ;
+    "Gwangjin" = "Gwangjin" ;
+    "Dong-daemoon" = "Dong-daemoon";
+    "Jungnang" = "Jungnang";
+    "Sungbuk" = "Sungbuk";
+    "Gangbuk" = "Gangbuk";
+    "Dobong" = "Dobong";
+    "Nowon" = "Nowon";
+    "Eunpyeong" = "Eunpyeong";
+    "Seodaemun" = "Seodaemun";
+    "Mapo" = "Mapo";
+    "Yangcheon" = "Yangcheon";
+    "Gangseo" = "Gangseo";
+    "Guro" = "Guro";
+    "Geumcheon" = "Geumcheon";
+    "Yeongdeungpo" = "Yeongdeungpo";
+    "Dongjak" = "Dongjak";
+    "Gwanak" = "Gwanak";
+    "Seocho" = "Seocho";
+    "Gangnam" = "Gangnam";
+    "Songpa" = "Songpa";
+    "Gangdong" = "Gangdong";
+
+    // 세무서
+    "TaxJongro" = "Jongro";
+    "TaxJungbu" = "Jung-gu";
+    "TaxNam-daemoon" = "Nam-daemoon";
+    "TaxYong-san" =  "Yong-san" ;
+    "TaxSungbuk" = "Sungbuk" ;
+    "TaxSeodaemun" = "Seodaemun";
+    "TaxEunpyeong" = "Eunpyeong";
+    "TaxMapo" = "Mapo";
+    "TaxYeongdeungpo" = "Yeongdeungpo";
+    "TaxGangseo" = "Gangseo";
+    "TaxYangcheon" = "Yangcheon";
+    "TaxGuro" = "Guro";
+    "TaxDongjak" = "Dongjak";
+    "TaxGeumcheon" = "Geumcheon";
+    "TaxGwanak" = "Gwanak";
+    "TaxGangnam" = "Gangnam";
+    "TaxSamsung" = "Samsung";
+    "TaxYeoksam" = "Yeoksam";
+    "TaxBanpo" = "Banpo";
+    "TaxSeocho" = "Seocho";
+    "TaxSongpa" = "Songpa";
+    "TaxJamsil" = "Jamsil";
+    "TaxSeong-dong" = "Seong-dong/Gwangjin";
+    "TaxNowonChang-dong" = "Nowon/Chang-dong";
+    "TaxDong-daemoon" = "Dong-daemoon";
+    "TaxJungnang" = "Jungnang";
+    "TaxGangdong" = "Gangdong";
+    "TaxDobong" = "Dobong";
+

@@ -1,8 +1,86 @@
-"mainViewTitle" = "서울시 관공서 정보" ;
-"officeIntroViewTitle" = "주요 업무" ;
-"officeListViewTitle" = "자치구별 위치" ;
-
+// 메인뷰
+"mainViewTitle" = "서울시내 관공서 정보" ;
 "taxOfficeListBtnTitle" = "세무서 찾기" ;
 "guOfficeListBtnTitle" = "구청 찾기" ;
 "taxOfficeIntroBtnTitle" = "세무서 주요 업무" ;
 "guOfficeIntroBtnTitle" = "구청 주요 업무" ;
+
+// 업무 안내뷰
+"officeIntroViewTitle" = "주요 업무" ;
+    // 구청
+    "passport" = "여권";
+    "family" = "가족 관계";
+    "localTax" = "지방세";
+    "car" = "차량 등록, 과태료";
+    "welfare" = "복지 상담";
+    "healthCare" = "환경/위생";
+    "realEstate" = "부동산/건축";
+    "advert" = "광고물/현수막";
+
+    // 세무서
+    "Protectingtaxpayer" = "납세자 보호";
+    "valueAddedTax" = "부가가치세";
+    "corporateTax" = "법인세";
+    "incomeTax" = "소득세";
+
+// 위치 안내뷰
+"officeListViewTitle" = "자치구별 위치" ;
+    // 구청
+    "Jongro" = "종로";
+    "Jung-gu" = "중구";
+    "Seong-dong" = "성동";
+    "Yong-san" =  "용산" ;
+    "Gwangjin" = "광진" ;
+    "Dong-daemoon" = "동대문";
+    "Jungnang" = "중랑";
+    "Sungbuk" = "성북";
+    "Gangbuk" = "강북";
+    "Dobong" = "도봉";
+    "Nowon" = "노원";
+    "Eunpyeong" = "은평";
+    "Seodaemun" = "서대문";
+    "Mapo" = "마포";
+    "Yangcheon" = "양천";
+    "Gangseo" = "강서";
+    "Guro" = "구로";
+    "Geumcheon" = "금천";
+    "Yeongdeungpo" = "영등포";
+    "Dongjak" = "동작";
+    "Gwanak" = "관악";
+    "Seocho" = "서초";
+    "Gangnam" = "강남";
+    "Songpa" = "송파";
+    "Gangdong" = "강동";
+
+    // 세무서
+    "TaxJongro" = "종로";
+    "TaxJungbu" = "중구(중구 일부)";
+    "TaxNam-daemoon" = "남대문(중구 일부)";
+    "TaxYong-san" =  "용산" ;
+    "TaxSungbuk" = "성북" ;
+    "TaxSeodaemun" = "서대문";
+    "TaxEunpyeong" = "은평";
+    "TaxMapo" = "마포";
+    "TaxYeongdeungpo" = "영등포";
+    "TaxGangseo" = "강서";
+    "TaxYangcheon" = "양천";
+    "TaxGuro" = "구로";
+    "TaxDongjak" = "동작(영등포 일부)";
+    "TaxGeumcheon" = "금천";
+    "TaxGwanak" = "관악";
+    "TaxGangnam" = "강남";
+    "TaxSamsung" = "삼성(강남 일부)";
+    "TaxYeoksam" = "역삼(강남 일부)";
+    "TaxBanpo" = "반포(서초 일부)";
+    "TaxSeocho" = "서초";
+    "TaxSongpa" = "송파";
+    "TaxJamsil" = "잠실(송파 일부)";
+    "TaxSeong-dong" = "성동/광진";
+    "TaxGangbuk" = "강북";
+    "TaxNowonChang-dong" = "노원/창동";
+    "TaxDong-daemoon" = "동대문";
+    "TaxJungnang" = "중랑";
+    "TaxNowon" = "노원";
+    "TaxGangdong" = "강동";
+    "TaxDobong" = "도봉";
+
