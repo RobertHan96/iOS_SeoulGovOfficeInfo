@@ -9,4 +9,6 @@ target 'GovOfficeInfo' do
 	pod 'NMapsMap'
   pod 'SnapKit'
   pod 'Then'
+  pod 'Firebase/Analytics'
+  
 end

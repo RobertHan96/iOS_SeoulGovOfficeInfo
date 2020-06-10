@@ -13,6 +13,7 @@
 		042408B0243AE2E100F48517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042408AE243AE2E100F48517 /* LaunchScreen.storyboard */; };
 		043C11B324762E40006E9FDE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 043C11B524762E40006E9FDE /* Localizable.strings */; };
 		0492D375248D06CD0009B6DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0492D377248D06CD0009B6DC /* InfoPlist.strings */; };
+		0492D39924909C700009B6DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0492D39824909C700009B6DC /* GoogleService-Info.plist */; };
 		04C08E98243D8C1B00457ECD /* OfficeIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C08E97243D8C1B00457ECD /* OfficeIntroViewController.swift */; };
 		04C08E9D243EB4CE00457ECD /* OfficeTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C08E9B243EB4CE00457ECD /* OfficeTaskTableViewCell.swift */; };
 		04C08E9E243EB4CE00457ECD /* OfficeTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C08E9C243EB4CE00457ECD /* OfficeTaskTableViewCell.xib */; };
@@ -37,6 +38,7 @@
 		043C11B724762E81006E9FDE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0492D376248D06CD0009B6DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0492D378248D06D40009B6DC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0492D39824909C700009B6DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04C08E97243D8C1B00457ECD /* OfficeIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeIntroViewController.swift; sourceTree = "<group>"; };
 		04C08E9B243EB4CE00457ECD /* OfficeTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeTaskTableViewCell.swift; sourceTree = "<group>"; };
 		04C08E9C243EB4CE00457ECD /* OfficeTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfficeTaskTableViewCell.xib; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		04240897243AE2DB00F48517 = {
 			isa = PBXGroup;
 			children = (
+				0492D39824909C700009B6DC /* GoogleService-Info.plist */,
 				0492D377248D06CD0009B6DC /* InfoPlist.strings */,
 				042408A2243AE2DB00F48517 /* GovOfficeInfo */,
 				042408A1243AE2DB00F48517 /* Products */,
@@ -220,6 +223,7 @@
 				042408B0243AE2E100F48517 /* LaunchScreen.storyboard in Resources */,
 				042408AD243AE2E100F48517 /* Assets.xcassets in Resources */,
 				04C08E9E243EB4CE00457ECD /* OfficeTaskTableViewCell.xib in Resources */,
+				0492D39924909C700009B6DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
