@@ -1,5 +1,5 @@
-
 import Foundation
+import FirebaseAnalytics
 
 extension Int {
     func setPreviousViewId(id : Int) -> [Office] {
@@ -23,5 +23,3 @@ extension String {
         return result
     }
 }
-
-

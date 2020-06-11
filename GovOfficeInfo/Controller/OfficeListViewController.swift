@@ -2,6 +2,8 @@ import UIKit
 
 import Then
 import SnapKit
+import FirebaseAnalytics
+
 class OfficeListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     override func viewDidLoad() {
         super.viewDidLoad()

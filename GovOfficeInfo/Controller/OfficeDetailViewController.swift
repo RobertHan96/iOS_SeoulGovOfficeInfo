@@ -4,6 +4,7 @@ import SafariServices
 import SnapKit
 import NMapsMap
 import Then
+import FirebaseAnalytics
 
 class OfficeDetailViewController: UIViewController {
     let ad = UIApplication.shared.delegate as? AppDelegate
@@ -15,9 +16,7 @@ class OfficeDetailViewController: UIViewController {
         setupUI()
         makeConstratins()
         setupOfficeLocation()
-        print("이전 클릭 정보", id, officeDivision)
     }
-    
     let labelOfficeName = UILabel().then {
         $0.text = ""
         $0.font = UIFont.boldSystemFont(ofSize: 40)
@@ -42,7 +41,6 @@ class OfficeDetailViewController: UIViewController {
     let mapView = NMFMapView()
     
     func setupOfficeLocation() {
-        
         let officeLat : Double = self.officeDivision[self.id].lat
         let officeLng : Double = self.officeDivision[self.id].lng
         let officeLocation = NMGLatLng(lat: officeLat, lng:officeLng)
@@ -54,6 +52,7 @@ class OfficeDetailViewController: UIViewController {
     }
     
     @objc func oepnSFSafariViewControllerAction(_ sender: UIButton) {
+        logSelectedItem(item: "홈페이지 열기")
         let publicSite : String = self.officeDivision[self.id].publicSite
         guard let url = URL(string: publicSite) else { return }
         let safariViewController = SFSafariViewController(url: url)
@@ -61,6 +60,7 @@ class OfficeDetailViewController: UIViewController {
      }
     
     @objc func makePhoneCall(_ sender : UIButton) {
+        logSelectedItem(item: "전화 걸기")
         if let phoneCallURL = URL(string: "tel://\(sender.titleLabel!.text!.makeNumberToPhoneCall)") {
             let application:UIApplication = UIApplication.shared
             if (application.canOpenURL(phoneCallURL)) {
@@ -81,6 +81,7 @@ class OfficeDetailViewController: UIViewController {
         labelOfficeNumber.addTarget(self, action: #selector(makePhoneCall(_:)), for: .touchUpInside)
         DatafetchManager.shared.fetchOfficeData {
             self.labelOfficeName.text = self.officeDivision[self.id].name
+            logSelectedItem(item: "\(self.labelOfficeName.text ?? "\(self.officeDivision)")")
             self.labelOfficeNumber.setTitle("TEL.\(self.officeDivision[self.id].tel)", for: .normal)
             self.labelOfficeAddress.text = self.officeDivision[self.id].address
         }

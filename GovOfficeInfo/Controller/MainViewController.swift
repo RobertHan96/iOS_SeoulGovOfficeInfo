@@ -1,6 +1,7 @@
 import UIKit
 
 import Then
+import FirebaseAnalytics
 import SnapKit
 
 class MainViewController: UIViewController {
@@ -70,18 +71,22 @@ class MainViewController: UIViewController {
         if sender == btnGotoGuOfficeIntro {
             let officeTaskVC = OfficeIntroViewController()
             ad?.officeID = 1
+            logSelectedItem(item: "구청업무조회")
             self.navigationController?.pushViewController(officeTaskVC, animated: true)
         } else if sender == btnGotoTaxOfficeIntro {
             let officeTaskVC = OfficeIntroViewController()
             ad?.officeID = 2
+            logSelectedItem(item: "세무서업무조회")
             self.navigationController?.pushViewController(officeTaskVC, animated: true)
         } else if sender == btnGotoGuOffice {
             let officeListVC = OfficeListViewController()
             ad?.officeID = 1
+            logSelectedItem(item: "구청리스트조회")
             self.navigationController?.pushViewController(officeListVC, animated: true)
         } else if sender == btnGotoTaxOffice {
             let officeListVC = OfficeListViewController()
             ad?.officeID = 2
+            logSelectedItem(item: "세무서리스트조회")
             self.navigationController?.pushViewController(officeListVC, animated: true)
         }
     }
