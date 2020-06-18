@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key> NSLocationWhenInUseUsageDescription</key>
+	<string>주변의 세무서, 구청 위치 안내를 위해 위치정보가 필요합니다.</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
 	<key>CLIENT_ID</key>
 	<string>497740256432-eklh6pcjd1bfs0redqh49c5uvq1p9ddr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
@@ -21,15 +25,15 @@
 	<key>STORAGE_BUCKET</key>
 	<string>seoulgovofficeinfo.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:497740256432:ios:b730501ff5c6cc4a6cd775</string>
 	<key>DATABASE_URL</key>
