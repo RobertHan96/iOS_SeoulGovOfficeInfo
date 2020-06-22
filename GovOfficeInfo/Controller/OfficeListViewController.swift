@@ -25,7 +25,7 @@ class OfficeListViewController: UIViewController, UICollectionViewDelegate, UICo
     let officeListCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()).then {
         $0.register(UINib(nibName: "OfficeListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "officeListItem")
         let layout = UICollectionViewFlowLayout()
-        $0.backgroundColor = .secondarySystemBackground
+        $0.backgroundColor = .groupTableViewBackground
         layout.minimumInteritemSpacing = 3
         $0.collectionViewLayout = layout
     }
@@ -62,7 +62,7 @@ class OfficeListViewController: UIViewController, UICollectionViewDelegate, UICo
     }
 
     func setupUI() {
-        view.backgroundColor = .secondarySystemBackground
+        view.backgroundColor = .groupTableViewBackground
         view.addSubview(btnTitle)
         view.addSubview(officeListCollectionView)
         officeListCollectionView.delegate = self

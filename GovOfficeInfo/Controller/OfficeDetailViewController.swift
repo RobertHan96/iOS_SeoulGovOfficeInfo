@@ -70,7 +70,7 @@ class OfficeDetailViewController: UIViewController {
     }
 
     func setupUI() {
-        view.backgroundColor = .secondarySystemBackground
+        view.backgroundColor = .groupTableViewBackground
         view.addSubview(labelOfficeName)
         mapViewContainer.addSubview(mapView)
         view.addSubview(labelOfficeNumber)

@@ -17,7 +17,7 @@ class OfficeIntroViewController: UIViewController, UITableViewDelegate, UITableV
     let officeTaskTable : UITableView = UITableView().then {
         $0.separatorStyle = .none
         $0.separatorInset = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
-        $0.backgroundColor = .secondarySystemBackground
+        $0.backgroundColor = .groupTableViewBackground
         $0.allowsSelection = false
         $0.isScrollEnabled = false
         $0.register(UINib(nibName: "OfficeTaskTableViewCell", bundle: nil), forCellReuseIdentifier: "officeTaskItemCell")
@@ -44,7 +44,7 @@ class OfficeIntroViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let officeTaskCell = tableView.dequeueReusableCell(withIdentifier: "officeTaskItemCell", for: indexPath) as? OfficeTaskTableViewCell else {return UITableViewCell()}
-        officeTaskCell.backgroundColor = .secondarySystemBackground
+        officeTaskCell.backgroundColor = .groupTableViewBackground
         if ad?.officeID == 1 {
             officeTaskCell.labelOfficeTask.text = DatafetchManager.shared.guItems[indexPath.row]
         } else {
@@ -65,7 +65,7 @@ class OfficeIntroViewController: UIViewController, UITableViewDelegate, UITableV
     }
 
     func setupUI() {
-        view.backgroundColor = .secondarySystemBackground
+        view.backgroundColor = .groupTableViewBackground
         view.addSubview(btnTitle)
         view.addSubview(officeTaskTable)
         officeTaskTable.delegate = self

@@ -1,9 +1,10 @@
 // 메인뷰
-"mainViewTitle" = "서울시내 관공서 정보" ;
+"mainViewTitle" = "서울시내 관공서 위치 정보" ;
 "taxOfficeListBtnTitle" = "세무서 찾기" ;
 "guOfficeListBtnTitle" = "구청 찾기" ;
 "taxOfficeIntroBtnTitle" = "세무서 주요 업무" ;
 "guOfficeIntroBtnTitle" = "구청 주요 업무" ;
+"contact" = "문의사항\nE-mail : studiofirstzero@gmail.com";
 
 // 업무 안내뷰
 "officeIntroViewTitle" = "주요 업무" ;

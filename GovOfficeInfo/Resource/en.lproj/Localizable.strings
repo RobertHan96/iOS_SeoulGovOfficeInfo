@@ -1,9 +1,10 @@
 // Main View
-"mainViewTitle" = "Gov. offices in Seoul" ;
+"mainViewTitle" = "Gov.offices in Seoul" ;
 "taxOfficeListBtnTitle" = "Find the Tax Offices" ;
 "guOfficeListBtnTitle" = "Find the Gu Office" ;
 "taxOfficeIntroBtnTitle" = "Tax office Responsibilities" ;
 "guOfficeIntroBtnTitle" = "Gu office Responsibilities" ;
+"contact" = "Q&A\nE-mail : studiofirstzero@gmail.com";
 
 // Officce Tasks View
 "officeIntroViewTitle" = "Responsibilities" ;
