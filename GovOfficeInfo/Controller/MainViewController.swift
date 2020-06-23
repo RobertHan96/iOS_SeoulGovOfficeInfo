@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
         $0.layer.backgroundColor = UIColor(red: 236/255, green: 184/255, blue: 140/255, alpha: 1.0).cgColor
     }
     let mainTitile = UILabel().then {
-        var titleFontSize = 0
+        var titleFontSize = 24
         if UIDevice.current.userInterfaceIdiom == .pad { titleFontSize = 40 }
         $0.text = "mainViewTitle".localized
         $0.font = UIFont.boldSystemFont(ofSize: CGFloat(titleFontSize))
